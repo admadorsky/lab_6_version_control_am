@@ -12,3 +12,27 @@ def encode(password):
 
 # test_password = "47583645"                                    # testing encode()
 # print(encode(test_password))
+
+
+menu = """
+Menu  
+------------- 
+1. Encode  
+2. Decode  
+3. Quit 
+"""
+while True:
+
+    print(menu)
+    user_choice = int(input("Please enter an option: "))
+
+    if user_choice == 1:
+        input_password = str(input("Please enter your password to encode: "))
+        encoded_password = encode(input_password)
+        print("Your password has been encoded and stored!")
+
+    elif user_choice == 2:
+        print("The encoded password is " + encoded_password + ", and the original password is " decode(encoded_password))
+
+    elif user_choice == 3:
+        quit()
