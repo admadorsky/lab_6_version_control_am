@@ -1,5 +1,7 @@
 # ANTHONY MADORSKY'S encoder algorithm
 
+from decoder import decode
+
 def encode(password):
     encoded_list = []                                           # initialize an empty list to store shifted values
     for letter in password:
@@ -32,7 +34,7 @@ while True:
         print("Your password has been encoded and stored!")
 
     elif user_choice == 2:
-        print("The encoded password is " + encoded_password + ", and the original password is " decode(encoded_password))
+        print("The encoded password is " + encoded_password + ", and the original password is " + decode(encoded_password))
 
     elif user_choice == 3:
         quit()
