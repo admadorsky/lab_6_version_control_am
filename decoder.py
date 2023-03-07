@@ -1,4 +1,4 @@
-# Alexander Bergendal's decoding program
+# Alexander Bergendal's Decoding Program
 def decode(string):
     # decoded string is initially empty
     decoded_string = ''
